@@ -1,0 +1,6 @@
+# Gradle / IntelliJ build artifacts
+.gradle/
+build/
+.intellijPlatform/
+*.lock
+.idea/
