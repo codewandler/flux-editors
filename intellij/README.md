@@ -34,7 +34,7 @@ release}/fluxlang`, then `$PATH`. Build it with `cargo build -p flux-lang --feat
 Requires **JDK 21** (IntelliJ 2024.2+ builds against JBR 21).
 
 ```bash
-cd editors/intellij
+cd intellij
 
 # First time only — generate the Gradle wrapper if you don't have one
 #   (or just open this folder in IntelliJ and let it sync Gradle).
@@ -52,13 +52,14 @@ Set the IDE you target in [`gradle.properties`](gradle.properties) (`platformTyp
 
 ## Verify
 
-Open these and confirm coloring, the file icon, Ctrl-/ commenting, and brace matching:
+Open the bundled sample and confirm coloring, the file icon, Ctrl-/ commenting, and brace matching:
 
-- `../../crates/flux-flow/assets/agent-loop.flux`
-- `../../crates/flux-lang/examples/call-routing.flux`
+- [`sample/demo.flux`](sample/demo.flux)
 
-Every `*.flux` text file under `crates/flux-lang/examples/`, `crates/flux-flow/assets/`, and `examples/`
-should highlight without the lexer choking.
+For more, any `*.flux` **text**-form file in the flux repo highlights without the lexer choking — e.g.
+[`crates/flux-flow/assets/agent-loop.flux`](https://github.com/codewandler/flux/blob/main/crates/flux-flow/assets/agent-loop.flux)
+and
+[`crates/flux-lang/examples/call-routing.flux`](https://github.com/codewandler/flux/blob/main/crates/flux-lang/examples/call-routing.flux).
 
 ## Layout
 
