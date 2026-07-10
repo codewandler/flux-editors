@@ -61,9 +61,10 @@ from `$FLUXLANG_BIN`, then `<project>/target/{debug,release}/fluxlang`, then
 
 ### Helix / Neovim / Zed
 
-TextMate is not read by these editors. Go to
-[`codewandler/flux-tree-sitter`](https://github.com/codewandler/flux-tree-sitter)
-and follow its `AGENTS.md` — it has idempotent auto-setup.
+TextMate is not read by these editors. Humans start with the canonical
+[Flux editor setup guide](https://codewandler.github.io/flux/docs/language/editors); agents and
+automation follow [`codewandler/flux-tree-sitter`](https://github.com/codewandler/flux-tree-sitter)
+and its `AGENTS.md`, whose tested installer owns idempotent setup and updates.
 
 ---
 
@@ -91,5 +92,7 @@ and follow its `AGENTS.md` — it has idempotent auto-setup.
 
 ## See also
 
+- [Flux editor setup](https://codewandler.github.io/flux/docs/language/editors) — canonical human
+  onboarding and troubleshooting.
 - [codewandler/flux](https://github.com/codewandler/flux) — language, runtime, `fluxlang` CLI.
 - [codewandler/flux-tree-sitter](https://github.com/codewandler/flux-tree-sitter) — tree-sitter grammar.

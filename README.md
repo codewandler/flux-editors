@@ -5,6 +5,10 @@
 
 Tooling for authoring `.flux` files (the human-writable Flux-Lang text form). Pick by editor:
 
+For user-facing installation and update instructions, start with the canonical
+[Flux editor setup guide](https://codewandler.github.io/flux/docs/language/editors). This repository
+owns the TextMate and IntelliJ artifacts; it stays a router for tree-sitter-based editors.
+
 | Artifact | What | Use it when |
 |---|---|---|
 | [`textmate/`](textmate/) | A TextMate / VS Code grammar. Zero build. | You want color in **VS Code**, or in **IntelliJ** as a TextMate bundle. |
@@ -42,6 +46,8 @@ Architecture: a thin Kotlin layer hosts the IDE features over a flat PSI; the re
 
 ## See also
 
+- [Flux editor setup](https://codewandler.github.io/flux/docs/language/editors) — canonical
+  onboarding, updates, verification, and troubleshooting for every editor family.
 - [`AGENTS.md`](AGENTS.md) — agent-actionable setup for each editor (point your agent here).
 - [codewandler/flux](https://github.com/codewandler/flux) — the language, runtime, and `fluxlang` CLI.
 - [codewandler/flux-tree-sitter](https://github.com/codewandler/flux-tree-sitter) — the tree-sitter grammar
